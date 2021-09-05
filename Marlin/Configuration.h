@@ -827,7 +827,7 @@
 // Set to true to invert the logic of the probe.
 #define X_MIN_ENDSTOP_INVERTING true			// MODIFIED
 #define Y_MIN_ENDSTOP_INVERTING true			// MODIFIED
-#define Z_MIN_ENDSTOP_INVERTING true			// MODIFIED
+#define Z_MIN_ENDSTOP_INVERTING false			// MODIFIED false weil: #error "BLTOUCH requires Z_MIN_ENDSTOP_INVERTING set to false. Please update your Configuration.h file."
 #define I_MIN_ENDSTOP_INVERTING false
 #define J_MIN_ENDSTOP_INVERTING false
 #define K_MIN_ENDSTOP_INVERTING false
@@ -1733,7 +1733,7 @@
  * - Allows Z homing only when XY positions are known and trusted.
  * - If stepper drivers sleep, XY homing may be required again before Z homing.
  */
-//#define Z_SAFE_HOMING
+#define Z_SAFE_HOMING 						// MODIFIED - #error "Z_SAFE_HOMING is recommended when homing with a probe. Enable it or comment out this line to continue."
 
 #if ENABLED(Z_SAFE_HOMING)
   #define Z_SAFE_HOMING_X_POINT X_CENTER  // X point for Z homing
