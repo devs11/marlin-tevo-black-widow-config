@@ -1,0 +1,140 @@
+Changing monitoring state from "Offline" to "Detecting serial connection"
+Performing autodetection with 7 port/baudrate candidates: /dev/ttyUSB0@115200, /dev/ttyUSB0@250000, /dev/ttyUSB0@230400, /dev/ttyUSB0@57600, /dev/ttyUSB0@38400, /dev/ttyUSB0@19200, /dev/ttyUSB0@9600
+Trying port /dev/ttyUSB0, baudrate 115200
+Connecting to port /dev/ttyUSB0, baudrate 115200
+Handshake attempt #1 with timeout 2.0s
+Connected to: Serial<id=0x6c6ca750, open=True>(port='/dev/ttyUSB0', baudrate=115200, bytesize=8, parity='N', stopbits=1, timeout=2.0, xonxoff=False, rtscts=False, dsrdtr=False), starting monitor
+Send: N0 M110 N0*125
+Handshake attempt #2 with timeout 2.0s
+Send: N0 M110 N0*125
+Handshake attempt #3 with timeout 2.0s
+Send: N0 M110 N0*125
+Trying port /dev/ttyUSB0, baudrate 250000
+Handshake attempt #1 with timeout 2.0s
+Send: N0 M110 N0*125
+Recv: áq\x90\x13\x9b]Aàmp&\x16(\x90L\x14Xñ\x1c\x04\x9d\x18B6\x8b\x88\x94=)ÊÐ\x18Þn`\x9cÛH+\x13Oyú\x87p|\x12\x9b6«\x88M@\x88\x94\x05\x07\x1cH^\x06ÐM'üÁ\x08\x90]q³\x93}\x127\x97è%)þ]p\x82\x14á^Aa\x7fQAm~6\x0bÚK\x05q]\x08^ø55\x0c\xff]pI\x83\x93\x9aYecho:Unknown command: "\x18"
+Recv: ok
+Changing monitoring state from "Detecting serial connection" to "Operational"
+Send: N0 M110 N0*125
+Recv: ok
+Recv: ok
+Send: N1 M115*39
+Recv: FIRMWARE_NAME:Marlin 2.0.9.1 (Sep  6 2021 15:14:05) SOURCE_CODE_URL:github.com/MarlinFirmware/Marlin PROTOCOL_VERSION:1.0 MACHINE_TYPE:MARLIN 2.0.9.1 EXTRUDER_COUNT:1 UUID:cede2a2f-41a2-4748-9b12-c55c62f367ff
+Recv: Cap:SERIAL_XON_XOFF:0
+Recv: Cap:BINARY_FILE_TRANSFER:0
+Recv: Cap:EEPROM:1
+Recv: Cap:VOLUMETRIC:1
+Recv: Cap:AUTOREPORT_POS:0
+Recv: Cap:AUTOREPORT_TEMP:1
+Recv: Cap:PROGRESS:0
+Recv: Cap:PRINT_JOB:1
+Recv: Cap:AUTOLEVEL:1
+Recv: Cap:RUNOUT:0
+Recv: Cap:Z_PROBE:1
+Recv: Cap:LEVELING_DATA:1
+Recv: Cap:BUILD_PERCENT:0
+Recv: Cap:SOFTWARE_POWER:0
+Recv: Cap:TOGGLE_LIGHTS:0
+Recv: Cap:CASE_LIGHT_BRIGHTNESS:0
+Recv: Cap:EMERGENCY_PARSER:0
+Recv: Cap:HOST_ACTION_COMMANDS:0
+
+---------------------------------------------------------------------------
+Your printer's firmware supports host action commands, but they are
+disabled. The firmware will not inform OctoPrint about job pause &
+cancellations, filament runouts, and similar firmware-side events. If you
+want this functionality, you need to change your firmware's configuration.
+
+Learn more at https://faq.octoprint.org/warning-firmware-hostcommands
+---------------------------------------------------------------------------
+
+
+Recv: Cap:PROMPT_SUPPORT:0
+Recv: Cap:SDCARD:1
+Recv: Cap:REPEAT:0
+Recv: Cap:SD_WRITE:1
+Recv: Cap:AUTOREPORT_SD_STATUS:0
+Recv: Cap:LONG_FILENAME:0
+Recv: Cap:THERMAL_PROTECTION:1
+Recv: Cap:MOTION_MODES:0
+Recv: Cap:ARCS:1
+Recv: Cap:BABYSTEPPING:0
+Recv: Cap:CHAMBER_TEMPERATURE:0
+Recv: Cap:COOLER_TEMPERATURE:0
+Recv: Cap:MEATPACK:0
+Recv: ok
+Send: M21
+Recv: echo:SD card ok
+Recv: ok
+Send: M155 S2
+Recv: ok
+Send: M20
+Recv: Begin file list
+Recv: ALTERM~1/W\x9aRFEL~1.GCO 145382
+Recv: ALTERM~1/0C5E9~1.GCO 95022
+Recv: ALTERM~1/ABD_DO~1.GCO 3808398
+Recv: ALTERM~1/ADAPTE~1.GCO 80690
+Recv: ALTERM~1/ADAPTE~2.GCO 80305
+Recv: ALTERM~1/ADAPTE~3.GCO 80834
+Recv: ALTERM~1/ADAPTE~4.GCO 121199
+Recv: ALTERM~1/S_QUAR~1.GCO 442028
+Recv: ALTERM~1/SQUARE~1.GCO 179690
+Recv: ALTERM~1/SQUARE~2.GCO 93865
+Recv: ALTERM~1/SQUARE~3.GCO 150765
+Recv: ALTERM~1/SQUARE~4.GCO 179584
+Recv: ALTERM~1/SQ3ACC~1.GCO 123910
+Recv: ALTERM~1/SQ9C69~1.GCO 316237
+Recv: ALTERM~1/SQ4B54~1.GCO 161270
+Recv: ALTERM~1/TBW_RA~1.GCO 11946399
+Recv: ALTERM~1/TBW_TE~1.GCO 119865
+Recv: ALTERM~1/TBW_WU~1.GCO 204608
+Recv: ALTERM~1/TBW_WU~2.GCO 361324
+Recv: ALTERM~1/UNTITL~1.GCO 200818
+Recv: ALTERM~1/W\x9aRFEL~2.GCO 521732
+Recv: TBW_TE~1.GCO 104010
+Recv: W_02MM~1.GCO 495439
+Recv: W_01MM~1.GCO 934556
+Recv: End file list
+Recv: ok
+Recv:  T:21.16 /0.00 B:21.01 /0.00 @:0 B@:0
+Recv:  T:21.31 /0.00 B:20.82 /0.00 @:0 B@:0
+Recv:  T:21.27 /0.00 B:21.05 /0.00 @:0 B@:0
+Recv:  T:21.24 /0.00 B:20.90 /0.00 @:0 B@:0
+Recv:  T:21.27 /0.00 B:20.75 /0.00 @:0 B@:0
+Recv:  T:21.16 /0.00 B:20.71 /0.00 @:0 B@:0
+Recv:  T:21.16 /0.00 B:20.94 /0.00 @:0 B@:0
+Send: M503
+Recv: echo:  G21    ; Units in mm (mm)
+Recv: echo:  M149 C ; Units in Celsius
+Recv: 
+Recv: echo:; Filament settings: Disabled
+Recv: echo:  M200 S0 D1.75
+Recv: echo:; Steps per unit:
+Recv: echo: M92 X160.00 Y160.00 Z3200.00 E935.00
+Recv: echo:; Maximum feedrates (units/s):
+Recv: echo:  M203 X300.00 Y300.00 Z5.00 E25.00
+Recv: echo:; Maximum Acceleration (units/s2):
+Recv: echo:  M201 X3000.00 Y3000.00 Z100.00 E10000.00
+Recv: echo:; Acceleration (units/s2): P<print_accel> R<retract_accel> T<travel_accel>
+Recv: echo:  M204 P3000.00 R3000.00 T3000.00
+Recv: echo:; Advanced: B<min_segment_time_us> S<min_feedrate> T<min_travel_feedrate> J<junc_dev>
+Recv: echo:  M205 B20000.00 S0.00 T0.00 J0.01
+Recv: echo:; Home offset:
+Recv: echo:  M206 X0.00 Y0.00 Z0.00
+Recv: echo:; Auto Bed Leveling:
+Recv: echo:  M420 S0
+Recv: echo:; Material heatup parameters:
+Recv: echo:  M145 S0 H190.00 B70.00 F0
+Recv: echo:  M145 S1 H240.00 B110.00 F0
+Recv: echo:; PID settings:
+Recv: echo:  M301 P39.38 I3.51 D110.34
+Recv: echo:; Z-Probe Offset (mm):
+Recv: echo:  M851 X48.00 Y14.00 Z-1.45
+Recv: ok
+Recv:  T:21.20 /0.00 B:20.94 /0.00 @:0 B@:0
+Recv:  T:21.39 /0.00 B:20.90 /0.00 @:0 B@:0
+Recv:  T:21.16 /0.00 B:20.97 /0.00 @:0 B@:0
+Recv:  T:21.24 /0.00 B:20.94 /0.00 @:0 B@:0
+Recv:  T:21.12 /0.00 B:21.09 /0.00 @:0 B@:0
+Recv:  T:21.09 /0.00 B:20.82 /0.00 @:0 B@:0
+Recv:  T:21.09 /0.00 B:21.05 /0.00 @:0 B@:0
